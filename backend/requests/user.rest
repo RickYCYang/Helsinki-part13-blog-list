@@ -1,0 +1,25 @@
+### get all users
+GET http://localhost:3001/api/users
+
+### create new user
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+  "username": "Amy@gmail.com",
+  "name": "Amy",
+  "password": "secret"
+}
+
+### get user by id
+GET http://localhost:3001/api/users/2
+
+### get user by id with query criteria
+GET http://localhost:3001/api/users/1?read=false&teams=true
+
+### update username
+PUT http://localhost:3001/api/users/RickYC@gmail.com
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlJpY2tAZ21haWwuY29tIiwiaWQiOjYsImlhdCI6MTY3MjQ3MTYyNH0.mUuy6Xg6mUFAIa5WteuSqcg7PRLwn3aUaHcyh7pgy5M
+
+### get all admins
+GET http://localhost:3001/api/users/admin

@@ -1,0 +1,18 @@
+### add a new reading list of login-in user
+POST http://localhost:3001/api/readinglists
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFyaXNAZ21haWwuY29tIiwiaWQiOjIsImlhdCI6MTY3Mjc1NzI4OH0.m61_ud6YDhvpqREA-5V1U-UXpoaqX8lknaFPyiUZ-q8
+
+{
+  "blogId": 11
+}
+
+
+### update blog's reading state of user's reading lists
+PUT http://localhost:3001/api/readinglists/5
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlJpY2tAZ21haWwuY29tIiwiaWQiOjEsImlhdCI6MTY3Mjc1ODM5N30.pHq4SyxvMliVpcuzuiNJOb1l44Tq00dEziICiu65xqs
+
+{
+  "read": true
+}

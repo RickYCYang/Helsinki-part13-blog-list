@@ -1,0 +1,2 @@
+### Get number of blogs for each author and the total number of likes
+GET http://localhost:3001/api/authors

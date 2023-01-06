@@ -1,0 +1,8 @@
+### login by username and password
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+  "username": "Amy@gmail.com",
+  "password": "secret"
+}
